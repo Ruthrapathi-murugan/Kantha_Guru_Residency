@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  /* Premium Color Palette */
+  --primary: 222 47% 11%;
+  /* Deep Navy */
+  --primary-light: 217 33% 17%;
+  --accent: 45 29% 49%;
+  /* Muted Gold */
+  --accent-light: 45 40% 60%;
+
+  --bg-primary: 0 0% 100%;
+  --bg-secondary: 210 20% 98%;
+  --text-primary: 220 10% 20%;
+  --text-secondary: 215 15% 40%;
+
+  --white: 0 0% 100%;
+  --black: 0 0% 0%;
+
+  /* Spacing */
+  --container-width: 1200px;
+  --header-height: 80px;
+
+  /* Fonts */
+  --font-sans: 'Outfit', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Utilities */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--white));
+}
+
+.btn-primary:hover {
+  background-color: hsl(var(--primary-light));
+}
+
+.btn-accent {
+  background-color: hsl(var(--accent));
+  color: hsl(var(--white));
+}
+
+.btn-accent:hover {
+  background-color: hsl(var(--accent-light));
+}
+
+.section-padding {
+  padding: 5rem 0;
+}

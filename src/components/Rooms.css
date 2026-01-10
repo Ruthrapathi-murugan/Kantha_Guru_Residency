@@ -1,0 +1,137 @@
+.rooms-section {
+    background-color: hsl(var(--bg-secondary));
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.subtitle {
+    display: block;
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: hsl(var(--accent));
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: hsl(var(--primary));
+    font-weight: 400;
+}
+
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.room-card {
+    background: hsl(var(--white));
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.room-image-wrapper {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.room-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.room-card:hover .room-image {
+    transform: scale(1.05);
+}
+
+.price-tag {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 700;
+    color: hsl(var(--primary));
+    font-family: var(--font-serif);
+}
+
+.price-tag span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: hsl(var(--text-secondary));
+}
+
+.room-content {
+    padding: 1.5rem;
+}
+
+.room-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: hsl(var(--primary));
+}
+
+.room-description {
+    color: hsl(var(--text-secondary));
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.room-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature-pill {
+    font-size: 0.8rem;
+    background: hsl(var(--bg-secondary));
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    color: hsl(var(--text-secondary));
+}
+
+.room-options {
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid hsl(var(--bg-secondary));
+}
+
+.option-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+    user-select: none;
+    color: hsl(var(--text-primary));
+    font-weight: 500;
+}
+
+.toggle-status {
+    margin-left: auto;
+    font-size: 0.8rem;
+    color: hsl(var(--accent));
+    font-weight: 600;
+}
+
+.full-width {
+    width: 100%;
+}

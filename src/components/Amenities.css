@@ -1,0 +1,53 @@
+.amenities-section {
+    background-color: hsl(var(--white));
+}
+
+.amenities-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.amenity-category {
+    padding: 2rem;
+    background-color: hsl(var(--bg-secondary));
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.amenity-category:hover {
+    transform: translateY(-5px);
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.category-title {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: hsl(var(--primary));
+}
+
+.amenity-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.amenity-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: hsl(var(--text-secondary));
+    font-size: 0.95rem;
+}
+
+.amenity-icon {
+    color: hsl(var(--accent));
+    min-width: 20px;
+}
